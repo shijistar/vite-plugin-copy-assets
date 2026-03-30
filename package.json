@@ -1,0 +1,56 @@
+{
+  "name": "@tiny-codes/vite-plugin-copy-assets",
+  "version": "1.0.0",
+  "description": "A Vite plugin for copying static assets to the output directory, with support for development-time proxying. Similar to Webpack's CopyWebpackPlugin.",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "copy-assets",
+    "typescript",
+    "front-end",
+    "node.js"
+  ],
+  "homepage": "https://github.com/shijistar/vite-plugin-copy-assets",
+  "bugs": {
+    "url": "https://github.com/shijistar/vite-plugin-copy-assets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shijistar/vite-plugin-copy-assets.git"
+  },
+  "license": "MIT",
+  "author": "李凤宝(Leo) <shijistar@gmail.com>",
+  "sideEffects": false,
+  "type": "module",
+  "main": "es/plugin.js",
+  "module": "es/plugin.js",
+  "types": "es/plugin.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "LICENSE",
+    "CHANGELOG.md",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "scripts": {
+    "build": "father build",
+    "prepare": "husky",
+    "prepublishOnly": "run-s build"
+  },
+  "devDependencies": {
+    "@tiny-codes/code-style-all-in-one": "^2.0.0-beta.1",
+    "@types/node": "^25.5.0",
+    "father": "^4.6.17",
+    "npm-run-all2": "^8.0.4",
+    "tsx": "^4.21.0",
+    "vite": "^8.0.3"
+  },
+  "packageManager": "npm@11.4.2",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
