@@ -45,8 +45,11 @@
     "tsx": "^4.21.0",
     "vite": "^8.0.3"
   },
+  "peerDependencies": {
+    "vite": ">=8.0.0"
+  },
   "engines": {
-    "node": ">=22"
+    "node": ">=20"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
