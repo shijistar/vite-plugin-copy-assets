@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README.zh-CN.md) | [CHANGELOG](./CHANGELOG.md)
+
 # @tiny-codes/vite-plugin-copy-assets
 
 一个用于 Vite 的静态资源复制插件，支持：

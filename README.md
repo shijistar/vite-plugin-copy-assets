@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README.zh-CN.md) | [CHANGELOG](./CHANGELOG.md)
+
 # @tiny-codes/vite-plugin-copy-assets
 
 A Vite plugin for copying static assets with support for:
