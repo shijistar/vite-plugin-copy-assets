@@ -1,4 +1,4 @@
-# This workflow runs CI and publishes a package to npm with Trusted Publishing.
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
 name: Publish to npm
@@ -6,12 +6,6 @@ name: Publish to npm
 on:
   release:
     types: [published]
-
-permissions:
-  contents: write
-  packages: write
-  actions: read
-  statuses: write
 
 jobs:
   build:
@@ -23,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: https://registry.npmjs.org/
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
@@ -33,6 +27,10 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Uncomment the following line if you want to run tests
+      # - name: Run tests
+      #   run: pnpm test
 
   publish-npm:
     needs: build
@@ -44,13 +42,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: https://registry.npmjs.org/
           cache: "npm"
           cache-dependency-path: "**/package-lock.json"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
+        run: npm publish --provenance --access=public
