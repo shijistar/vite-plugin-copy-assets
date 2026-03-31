@@ -9,13 +9,12 @@
 
 ## 特性
 
-- 支持单文件、目录、glob 三种来源
+- 支持文件、目录、glob 来源，可配置 `dot` 和 `ignore` 过滤
 - 支持输出到 `build.outDir` 内或外
-- 开发模式自动挂载中间件并监听文件变化
-- 构建模式自动选择 `emitFile` 或直接写文件系统
-- 支持 `transform` 对每个文件内容做加工
-- 支持 `force` 冲突覆盖
-- 提供类型定义，TypeScript 友好
+- 开发模式按目标路径代理资源，并监听源文件变化
+- 构建时自动选择 `emitFile` 或直接写入文件系统
+- 支持 `transform`、`force` 和自定义 Content-Type
+- 导出 TypeScript 类型，便于在项目中直接使用
 
 ## 安装
 

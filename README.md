@@ -9,7 +9,7 @@ A Vite plugin for copying static assets with support for:
 
 ## Features
 
-- Supports file, directory, and glob sources
+- Supports file, directory, and glob sources with `dot` and `ignore` filters
 - Supports destinations both inside and outside `build.outDir`
 - Automatically mounts middleware and file watchers in development
 - Uses `emitFile` for in-`outDir` assets and filesystem writes for external targets

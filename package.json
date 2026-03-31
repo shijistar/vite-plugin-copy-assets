@@ -26,7 +26,6 @@
   "module": "es/plugin.js",
   "types": "es/plugin.d.ts",
   "files": [
-    "lib",
     "es",
     "LICENSE",
     "CHANGELOG.md",
@@ -46,7 +45,6 @@
     "tsx": "^4.21.0",
     "vite": "^8.0.3"
   },
-  "packageManager": "npm@11.4.2",
   "engines": {
     "node": ">=22"
   },
