@@ -1,5 +1,14 @@
 # @tiny-codes/vite-plugin-copy-assets
 
+## v1.0.1
+
+`2026-04-01`
+
+### Features
+
+- Declare peer dependency on Vite `>=8.0.0`
+- Require `Node.js >=20`
+
 ## v1.0.0
 
 `2026-03-31`
