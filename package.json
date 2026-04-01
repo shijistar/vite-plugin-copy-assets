@@ -1,6 +1,6 @@
 {
   "name": "@tiny-codes/vite-plugin-copy-assets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Vite plugin for copying static assets to the output directory, with support for development-time proxying. Similar to Webpack's CopyWebpackPlugin.",
   "keywords": [
     "vite",
