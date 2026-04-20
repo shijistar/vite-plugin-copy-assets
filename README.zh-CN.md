@@ -2,6 +2,8 @@
 
 # @tiny-codes/vite-plugin-copy-assets
 
+![Vite compatibility](https://registry.vite.dev/api/badges?package=@tiny-codes/vite-plugin-copy-assets&tool=vite)
+
 一个用于 Vite 的静态资源复制插件，支持：
 
 - 构建时复制文件到目标目录
@@ -265,7 +267,7 @@ copyAssets(
     contentTypes: {
       '.webmanifest': 'application/manifest+json; charset=utf-8',
     },
-  }
+  },
 );
 ```
 

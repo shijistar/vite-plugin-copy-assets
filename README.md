@@ -2,6 +2,8 @@
 
 # @tiny-codes/vite-plugin-copy-assets
 
+![Vite compatibility](https://registry.vite.dev/api/badges?package=@tiny-codes/vite-plugin-copy-assets&tool=vite)
+
 A Vite plugin for copying static assets with support for:
 
 - Copying files during build
@@ -266,7 +268,7 @@ copyAssets(
     contentTypes: {
       '.webmanifest': 'application/manifest+json; charset=utf-8',
     },
-  }
+  },
 );
 ```
 
