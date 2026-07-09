@@ -1,0 +1,14 @@
+.github/workflows/npm-publish.yml
+  h_282d460392904f 10-13,19,22,24,48,51,53,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "bc7f3ff937b577b5780323bbdb5f485393e61fd1",
+  "prompts": {},
+  "humans": {
+    "h_282d460392904f": {
+      "author": "lifb2 <lifb2@lenovo.com>"
+    }
+  }
+}
